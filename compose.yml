@@ -1,6 +1,6 @@
 services:
   zulu-pro-app:
-    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/zulu-app:latest
+    image: ${DOCKER_IMAGE}
     container_name: zulu-pro-app
     restart: unless-stopped
     ports:

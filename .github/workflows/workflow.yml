@@ -89,6 +89,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Prepare compose.yml with dynamic variables
+        shell: bash
+        env:
+          DOCKER_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+        run: |
+          envsubst '${DOCKER_IMAGE}' < compose.yml > compose.processed.yml
+          mv compose.processed.yml compose.yml
+
       - name: Copy compose file via SCP
         uses: appleboy/scp-action@v0.1.7
         with:
