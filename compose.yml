@@ -1,0 +1,11 @@
+services:
+  zulu-pro-app:
+    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/zulu-app:latest
+    container_name: zulu-pro-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
