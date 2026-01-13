@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import * as Icons from 'simple-icons';
 
 	const footerLinks = {
 		product: [
@@ -20,9 +21,9 @@
 	};
 
 	const socialLinks = [
-		{ label: 'Twitter', href: 'https://twitter.com', icon: '𝕏' },
-		{ label: 'Instagram', href: 'https://instagram.com', icon: '📷' },
-		{ label: 'YouTube', href: 'https://youtube.com', icon: '▶' }
+		{ label: 'Twitter', href: 'https://twitter.com', icon: Icons.siX },
+		{ label: 'Instagram', href: 'https://instagram.com', icon: Icons.siInstagram },
+		{ label: 'YouTube', href: 'https://youtube.com', icon: Icons.siYoutube }
 	];
 </script>
 
@@ -49,10 +50,12 @@
 							href={social.href}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card/50 text-sm transition-colors hover:border-primary/30 hover:bg-card"
+							class="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card/50 text-muted-foreground transition-colors hover:border-primary/30 hover:bg-card hover:text-primary"
 							aria-label={social.label}
 						>
-							{social.icon}
+							<svg role="img" viewBox="0 0 24 24" class="size-4 fill-current">
+								<path d={social.icon.path} />
+							</svg>
 						</a>
 					{/each}
 				</div>
