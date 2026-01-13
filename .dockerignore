@@ -1,0 +1,82 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun-debug.log*
+
+# Build output
+.svelte-kit
+build
+dist
+.output
+.vercel
+.netlify
+.wrangler
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.test
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.editorconfig
+.eslintrc.cjs
+.graphqlrc
+.idea/
+.npmrc
+.prettierrc
+.vscode/
+*.swn
+*.swo
+*.swp
+
+
+# Git
+.git
+.gitignore
+.gitattributes
+.github/
+
+# Docker
+.dockerignore
+Dockerfile
+compose*.yml
+
+# Logs
+logs
+*.log
+*.log*
+
+# Testing
+coverage/
+.nyc_output
+
+# Misc
+*.tsbuildinfo
+.temp
+.tmp
+temp/
+tmp/
+
+# Documentation
+*.md
+!package.json
+
+# Bun
+.bun
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+GEMINI.md
