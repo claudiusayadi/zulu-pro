@@ -29,9 +29,7 @@
 
 <footer class="relative z-10 w-full border-t border-border/20 bg-black">
 	<div class="container mx-auto px-4 py-16 md:px-6 md:py-20 lg:py-24">
-		<!-- Top Section: Logo + Links -->
 		<div class="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-5 lg:gap-8">
-			<!-- Brand Column -->
 			<div class="lg:col-span-2">
 				<a href={resolve('/')} class="mb-4 inline-flex items-center gap-2.5">
 					<div class="flex h-8 w-8 items-center justify-center rounded-md bg-foreground">
@@ -43,7 +41,6 @@
 					Precision-engineered headphones that transcend conventional limits. Experience pure sound.
 				</p>
 
-				<!-- Social Links -->
 				<div class="mt-6 flex items-center gap-4">
 					{#each socialLinks as social (social.href)}
 						<a
@@ -61,7 +58,6 @@
 				</div>
 			</div>
 
-			<!-- Product Links -->
 			<nav aria-label="Product links">
 				<h3 class="mb-4 text-xs font-black tracking-[0.3em] text-primary/60 uppercase">Product</h3>
 				<ul class="space-y-3">
@@ -78,7 +74,6 @@
 				</ul>
 			</nav>
 
-			<!-- Company Links -->
 			<nav aria-label="Company links">
 				<h3 class="mb-4 text-xs font-black tracking-[0.3em] text-primary/60 uppercase">Company</h3>
 				<ul class="space-y-3">
@@ -95,7 +90,6 @@
 				</ul>
 			</nav>
 
-			<!-- Legal Links -->
 			<nav aria-label="Legal links">
 				<h3 class="mb-4 text-xs font-black tracking-[0.3em] text-primary/60 uppercase">Legal</h3>
 				<ul class="space-y-3">

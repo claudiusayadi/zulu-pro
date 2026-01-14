@@ -80,3 +80,5 @@ tmp/
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 GEMINI.md
+scripts
+*.conf

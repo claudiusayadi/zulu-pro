@@ -4,8 +4,9 @@ services:
     container_name: zulu-pro-app
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - ${PORT}:${PORT}
     environment:
-      - NODE_ENV=production
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true"
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      NODE_ENV: production

@@ -95,7 +95,6 @@
 			</h2>
 		</header>
 
-		<!-- Hero Showcase Image -->
 		<div class="mb-20 overflow-hidden p-8 md:mb-32 md:p-12 lg:p-16">
 			<img
 				src="/zulu-pro-labels.webp"
@@ -114,7 +113,6 @@
 			</div>
 		</div>
 
-		<!-- Specifications Grid -->
 		<ul class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-10">
 			{#each specifications as spec (spec.id)}
 				<li class="spec-card group">
@@ -155,7 +153,6 @@
 			{/each}
 		</ul>
 
-		<!-- Additional Tech Info Banner -->
 		<div class="mt-16 flex flex-col items-center gap-4 p-6 text-center md:mt-24 md:gap-6 md:p-8">
 			<img
 				src="/zulu-pro-labels.webp"

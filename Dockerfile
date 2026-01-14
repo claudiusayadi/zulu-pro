@@ -14,8 +14,6 @@ FROM base AS build
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV PUBLIC_API_URL=https://giftcardvendor.dovely.tech/api/v1
-ENV PUBLIC_WS_URL=https://giftcardvendor.dovely.tech
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
@@ -27,12 +25,12 @@ FROM oven/bun:1-slim AS runtime
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV PORT=5202
+ENV PORT=5110
 
 # Copy built application
 COPY --from=build /app/build ./build
 COPY --from=build /app/package.json ./package.json
 
-EXPOSE 5202
+EXPOSE 5110
 
 CMD ["bun", "run", "./build/index.js"]
