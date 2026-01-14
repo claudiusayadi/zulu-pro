@@ -27,7 +27,7 @@
 	];
 </script>
 
-<footer class="relative z-50 mt-auto w-full border-t border-border/20 bg-background">
+<footer class="relative z-10 w-full border-t border-border/20 bg-black">
 	<div class="container mx-auto px-4 py-16 md:px-6 md:py-20 lg:py-24">
 		<div class="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-5 lg:gap-8">
 			<div class="lg:col-span-2">
