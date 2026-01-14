@@ -41,21 +41,21 @@ Visual representation of technical mastery, including driver technology, battery
 
 ### Prerequisites
 
-- Node.js (Latest stable version)
-- npm or pnpm
+- Node.js (>=18)
+- bun
 
 ### Setup
 
 1. Clone the repository.
-2. Install dependencies: `npm install`.
-3. Start the development server: `npm run dev`.
+2. Install dependencies: `bun install`.
+3. Start the development server: `bun run dev`.
 
 ### Build and Deployment
 
 To create an optimized production build:
 
 ```bash
-npm run build
+bun run build
 ```
 
 ## License
